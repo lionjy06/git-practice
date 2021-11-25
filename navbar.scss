@@ -1,0 +1,35 @@
+@use "reset.scss";
+
+.any-navbar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  padding: 25px;
+  transform: translateX(-150px);
+  transition: all 1s;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.any-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-250px);
+  }
+  50% {
+    transform: translateX(100px) skewX(30deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.any-navbar:hover p {
+  animation-name: slide;
+  animation-duration: 1.5s;
+}

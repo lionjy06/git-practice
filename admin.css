@@ -1,0 +1,330 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  border-collapse: collapse;
+}
+
+header {
+  border-bottom: 2px solid lightgray;
+}
+
+.nav-search {
+  padding: 20px;
+  display: flex;
+  max-width: 1800px;
+  margin: auto;
+  position: relative;
+}
+.nav-search .nav-hidden-icon {
+  display: none;
+  position: absolute;
+  top: 30%;
+  right: 30px;
+  font: 20px;
+}
+
+.nav-search-wrap {
+  position: relative;
+  width: 50%;
+  margin-left: 40px;
+}
+.nav-search-wrap input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 1px solid gray;
+  background-color: white;
+  color: lightgray;
+  height: 30px;
+  padding: 5px;
+}
+.nav-search-wrap input::-webkit-input-placeholder {
+  text-align: left;
+  font-size: 18px;
+}
+.nav-search-wrap input:focus {
+  -webkit-animation-name: slide;
+          animation-name: slide;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.nav-search-wrap button {
+  position: absolute;
+  font-size: 16px;
+  border: none;
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+}
+
+@-webkit-keyframes slide {
+  from {
+    width: 181px;
+    height: 30px;
+  }
+  to {
+    width: 70%;
+    height: 30px;
+  }
+}
+
+@keyframes slide {
+  from {
+    width: 181px;
+    height: 30px;
+  }
+  to {
+    width: 70%;
+    height: 30px;
+  }
+}
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item p {
+  margin-right: 30px;
+  color: rgba(90, 74, 74, 0.781);
+  font-size: 16px;
+}
+
+.aside-container {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  padding: 15px;
+  text-align: center;
+  transform: translateX(-150px);
+  transition: all 1.5s;
+  color: white;
+  background-color: #7f03fc;
+}
+.aside-container i {
+  transform: translateX(100px);
+  text-align: right;
+}
+.aside-container div {
+  margin-top: 25px;
+}
+
+.aside-container:hover {
+  transform: translateX(0px);
+  transition: all 1s;
+}
+
+.aside-container:hover i {
+  transform: translateX(0px);
+  transition: all 1s;
+  text-align: left;
+}
+
+@-webkit-keyframes span-move {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes span-move {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.dashboard {
+  width: 80%;
+  height: 350px;
+  margin: auto;
+  padding: 50px;
+}
+.dashboard h2 {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.dash-container {
+  width: 80%;
+  height: 300px;
+  padding: 30px;
+  margin: auto;
+}
+.dash-container .dash-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash-container .dash-wrap .green {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: lightgray 3px 2px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  border-left: 5px solid skyblue;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+}
+.dash-container .dash-wrap .green .dash-info {
+  margin-left: 15px;
+}
+.dash-container .dash-wrap .green h3 {
+  font-size: 16px;
+}
+.dash-container .dash-wrap .green .dash-icon {
+  margin-left: 40px;
+  font-size: 32px;
+  position: absolute;
+  top: 30%;
+  right: 12px;
+}
+.dash-container .dash-wrap .blue {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: lightgray 3px 2px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  border-left: 5px solid blue;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+}
+.dash-container .dash-wrap .blue .dash-info {
+  margin-left: 15px;
+}
+.dash-container .dash-wrap .blue h3 {
+  font-size: 16px;
+}
+.dash-container .dash-wrap .blue .dash-icon {
+  margin-left: 40px;
+  font-size: 32px;
+  position: absolute;
+  top: 30%;
+  right: 12px;
+}
+.dash-container .dash-wrap .navy {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: lightgray 3px 2px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  border-left: 5px solid navy;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+}
+.dash-container .dash-wrap .navy .dash-info {
+  margin-left: 15px;
+}
+.dash-container .dash-wrap .navy h3 {
+  font-size: 16px;
+}
+.dash-container .dash-wrap .navy .dash-icon {
+  margin-left: 40px;
+  font-size: 32px;
+  position: absolute;
+  top: 30%;
+  right: 12px;
+}
+.dash-container .dash-wrap .yellow {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: lightgray 3px 2px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  border-left: 5px solid yellow;
+  padding: 10px;
+  width: 250px;
+  height: 150px;
+}
+.dash-container .dash-wrap .yellow .dash-info {
+  margin-left: 15px;
+}
+.dash-container .dash-wrap .yellow h3 {
+  font-size: 16px;
+}
+.dash-container .dash-wrap .yellow .dash-icon {
+  margin-left: 40px;
+  font-size: 32px;
+  position: absolute;
+  top: 30%;
+  right: 12px;
+}
+
+.chart-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+.chart-container .chart-box {
+  width: 70%;
+  height: 100%;
+  border: 3px solid #eee;
+}
+.chart-container .chart-box .chart-info {
+  border: none;
+  border-bottom: 3px solid #eee;
+  padding: 10px;
+}
+.chart-container .chart-box .chart-info p {
+  margin: 0px;
+  font-weight: bolder;
+}
+.chart-container .chart-box .chart-img {
+  width: 100%;
+  height: 100%;
+}
+.chart-container .chart-box .chart-img #myChart {
+  width: 100%;
+  height: 80%;
+}
+.chart-container .task-container {
+  padding: 10px;
+}
+.chart-container .task-container ul {
+  box-shadow: lightgray 3px 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-search-wrap {
+    display: none;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-hidden-icon {
+    display: block;
+  }
+}/*# sourceMappingURL=admin.css.map */

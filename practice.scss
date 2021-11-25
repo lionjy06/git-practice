@@ -1,0 +1,110 @@
+$main-color: #2a4cb2;
+$basic-font: 20px;
+$small-font: 10px;
+%btn {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.ani-navbar {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  background-color: (0, 0, 0, 0.5);
+  padding: 25px;
+}
+
+.btn-green {
+  @extend %btn;
+  background-color: green;
+  h4 {
+    font-size: $basic-font;
+  }
+  p {
+    font-size: $small-font;
+  }
+}
+
+.btn-red {
+  @extend %btn;
+  background-color: red;
+}
+
+.btn-blue {
+  @extend %btn;
+  background-color: blue;
+}
+
+.ani-text {
+  text-align: center;
+}
+
+.ani-text:hover {
+  animation-name: move;
+  animation-duration: 2s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.btn:hover {
+  animation-name: rotation;
+  animation-duration: 1.5s;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(-30deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+  80% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.plus:hover {
+  animation-name: zigzag;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zigzag {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+    font-size: 40px;
+  }
+  100% {
+    transform: rotate(-30deg);
+    font-size: 40px;
+  }
+}

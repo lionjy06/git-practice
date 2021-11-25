@@ -1,0 +1,162 @@
+.btn-blue, .btn-red, .btn-green {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.ani-navbar {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  background-color: 0, 0, 0, 0.5;
+  padding: 25px;
+}
+
+.btn-green {
+  background-color: green;
+}
+.btn-green h4 {
+  font-size: 20px;
+}
+.btn-green p {
+  font-size: 10px;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.ani-text {
+  text-align: center;
+}
+
+.ani-text:hover {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.btn:hover {
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(-30deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+  80% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(30deg);
+  }
+  40% {
+    transform: rotate(-30deg);
+  }
+  60% {
+    transform: rotate(30deg);
+  }
+  80% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.plus:hover {
+  -webkit-animation-name: zigzag;
+          animation-name: zigzag;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes zigzag {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+    font-size: 40px;
+  }
+  100% {
+    transform: rotate(-30deg);
+    font-size: 40px;
+  }
+}
+
+@keyframes zigzag {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+    font-size: 40px;
+  }
+  100% {
+    transform: rotate(-30deg);
+    font-size: 40px;
+  }
+}/*# sourceMappingURL=practice.css.map */

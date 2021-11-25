@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  border-collapse: collapse;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  width: 80%;
+  margin: auto;
+}
+ul li {
+  text-align: left;
+  padding: 30px;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  font-size: 18px;
+}
+ul .active {
+  background-color: #2a4cb2;
+  color: #eee;
+}
+ul .active:hover {
+  background-color: red;
+}
+
+.alert-container {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+}
+.alert-container .alert-green {
+  padding: 30px;
+  background-color: rgba(66, 245, 173, 0.5);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.alert-container .alert-green span {
+  font-weight: bold;
+}
+.alert-container .alert-blue {
+  padding: 30px;
+  background-color: rgba(66, 242, 245, 0.5);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.alert-container .alert-blue span {
+  font-weight: bold;
+}
+.alert-container .alert-red {
+  padding: 30px;
+  background-color: rgba(245, 66, 108, 0.5);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.alert-container .alert-red span {
+  font-weight: bold;
+}/*# sourceMappingURL=list.css.map */

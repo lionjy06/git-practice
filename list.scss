@@ -1,0 +1,54 @@
+@use "reset";
+
+$sub-color: #eee;
+$basic-font: 18px;
+@mixin li-structure($align, $padding) {
+  text-align: $align;
+  padding: $padding;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+  font-size: $basic-font;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  width: 80%;
+  margin: auto;
+  li {
+    @include li-structure(left, 30px);
+  }
+  .active {
+    background-color: reset.$active-color;
+    color: $sub-color;
+  }
+  .active:hover {
+    background-color: red;
+  }
+}
+
+@mixin alert-structure($background-color) {
+  padding: 30px;
+  background-color: $background-color;
+
+  span {
+    font-weight: bold;
+  }
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.alert-container {
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  .alert-green {
+    @include alert-structure(rgba(66, 245, 173, 0.5));
+  }
+  .alert-blue {
+    @include alert-structure(rgba(66, 242, 245, 0.5));
+  }
+  .alert-red {
+    @include alert-structure(rgba(245, 66, 108, 0.5));
+  }
+}
